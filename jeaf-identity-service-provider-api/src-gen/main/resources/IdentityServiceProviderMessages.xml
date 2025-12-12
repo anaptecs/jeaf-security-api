@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Root PUBLIC "MessageData" "MessageData.dtd">
+<Root>
+    <ClassInfo author="JEAF Development Team" className="IdentityServiceProviderMessages" description="Class contains all generated constants for JEAF Security." package="com.anaptecs.jeaf.spi.identity" version="1.0" />
+    <MessageFolder name="JEAF Security">
+        <Message defaultText="Unable to communicate with Active Directory Server under URL ''{0}''. Please make sure the the URL is correct and that the server is accessible." description="Exceptions with this error code are thrown if the connect to an active directory fails." messageID="3000" name="COMMUNICATION_ERROR_TO_AD" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Es konnte keine Verbindung zum Active Directory Server mit der URL ''{0}'' hergestellt werden. Bitte stellen Sie sicher, dass die URL korrekt ist und auf den Server zugegriffen werden kann." variant="" />
+        </Message>
+        <Message defaultText="Lookup for user ''{0}'' in Active Directory failed." description="Exceptions with this error code are thrown if the connect to an active directory fails." messageID="3001" name="USER_LOOKUP_FAILED" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Zugriff auf Benutzerdetails des Benutzers ''{0}'' fehlgeschlagen." variant="" />
+        </Message>
+        <Message defaultText="Lookup for user ''{0}'' in Active Directory failed. May be the defined search base ''{1}'' does not fit." description="Exceptions with this error code are thrown if a user could not be found in Active Directory." messageID="3002" name="USER_NOT_FOUND" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Zugriff auf Benutzerdetails des Benutzers ''{0}'' fehlgeschlagen. Eventuell stimmt der Suchpfad ''{1}'' nicht." variant="" />
+        </Message>
+        <Message defaultText="Query for user accounts in Active Directory failed." description="Exceptions with this error code are thrown if the connect to an active directory fails." messageID="3003" name="USER_QUERY_FAILED" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Fehler bei der Suche im Active Directory." variant="" />
+        </Message>
+        <Message defaultText="Exception when trying to close connection to Active Directory Server ''{0}''." description="Exceptions with this error code are thrown if an exception occurs when trying to close connection to active directory server." messageID="3004" name="ERROR_ON_CLOSE_CONNECTION" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Fehler bei m Schliessen der Verbindung zum Active Directory Server ''{0}''." variant="" />
+        </Message>
+        <Message defaultText="Executing query ''{0}'' on Active Directory Server ''{1}'' (onlyActiveIdentities = {2})." description="Exceptions with this error code are thrown if an exception occurs when trying to close connection to active directory server." messageID="3005" name="EXECUTING_AD_QUERY" traceLevel="INFO" type="INFO" />
+        <Message defaultText="Creating users in active directory is currently not supported." description="Exceptions with this error code are thrown if a new user should be created in active directory server during registration." messageID="3006" name="CREATING_AD_USERS_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Registration of user ''{0}'' failed. Please ensure that the combination of login name and password is correct and that your account is not disabled in the connected Active Directory (URL: {1})." description="Exceptions with this error code are thrown if a new user should be created in active directory server during registration." messageID="3007" name="LOGIN_TO_AD_FAILED" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Registrierung des Benutzers ''{0}'' ist fehlgeschlagen. Bitte stellen Sie sicher, dass die Kombination von Benutzername und Password korrekt ist und dass der Account im angebundenen Active Directory (URL: {1}) nicht gesperrt ist." variant="" />
+        </Message>
+        <Message defaultText="Change of Active Directory password is currently not supported. Please change your Active Directory password through your Windows computer or contact your administrator." description="Exceptions with this error code are thrown if a new user tries to change his active directory password." messageID="3008" name="AD_PASSWORD_CHANGE_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Das Ändern eines Active Directory Passworts wird aktuell nicht unterstützt. Bitte ändern Sie Ihr Active Directory Passwort über Windows oder kontaktieren Sie Ihren Administrator." variant="" />
+        </Message>
+        <Message defaultText="Unable to connect to Active Directory with user ''{0}''. Please ensure that the user exists and the password and all other entries are correct." description="Exceptions with this error code are thrown if a connect to an Active Directory fails." messageID="3009" name="AD_AUTHENTICATION_ERROR" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Zugriff auf Active Directory mit dem Benutzer ''{0}'' fehlgeschlagen. Bitte stellen Sie sicher, dass der Benutzer existiert und das Passwort und alle anderen Eingaben korrekt sind." variant="" />
+        </Message>
+        <Message defaultText="Active Directory query returned unprocessed continuation references. Please check your configuration." description="Exceptions with this error code are thrown if a query in active directory contains unprocessed references." messageID="3010" name="UNPROCESSED_REFERENCES" traceLevel="WARN" type="ERROR" />
+        <Message defaultText="Unable to establish connection to user account database." description="Exceptions with this error code are thrown if a lookup for users fails.." messageID="3011" name="DB_CONNECTION_ERROR" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Verbindung zur Benutzer-Datenbank konnte nicht hergestellt werden." variant="" />
+        </Message>
+        <Message defaultText="Lookup for user ''{0}'' failed. The user could not be found." description="Exceptions with this error code are thrown if a lookup for users fails.." messageID="3012" name="USER_NOT_FOUND_IN_JEAF_IDP" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Suche nach Benutzer ''{0}''fehlgeschlagen. Der Benutzer konnte nicht gefunden werden." variant="" />
+        </Message>
+        <Message defaultText="Creating users is currently not supported." description="Exceptions with this error code are thrown if a new user should be created in JEAF IDP during registration." messageID="3013" name="CREATING_JEAF_IDP_USERS_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Creating users in external identity provider is currently not supported." description="Exceptions with this error code are thrown if a new user should be created in a SAML based identitiy provider during registration." messageID="3014" name="CREATING_SAML_USERS_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Change of password in external identity provider is currently not supported. Please change your password through the mechanism of the external identity provider or contact your system administrator." description="Exceptions with this error code are thrown if a new user tries to change his SAML password." messageID="3015" name="SAML_PASSWORD_CHANGE_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Das Ändern von Passwörtern in einem externen Login Provider wird aktuell nicht unterstützt. Bitte ändern Sie Ihr Passwort über den Login Provider oder kontaktieren Sie Ihren Administrator." variant="" />
+        </Message>
+        <Message defaultText="Quering users in external identity provider is currently not supported." description="Exceptions with this error code are thrown if a new user should be created in a SAML based identitiy provider during registration." messageID="3016" name="SAML_USERS_QUERY_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="The passed SAML token is invalid (Name-ID: {0}). See log file for further details." description="Exceptions with this error code are thrown if a invalid saml token is passed on a login." messageID="3017" name="SAML_TOKEN_INVALID" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="The passed SAML token is invalid. The required SAML attribute ''{0}'' is missing. This is probably in the SAML configuration issues of your Identity Management Systems. Please check WEEASY documentation for further details about SAML configuration." description="Exceptions with this error code are thrown if a invalid saml token is passed on a login." messageID="3018" name="SAML_LOGIN_NAME_MISSING" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="SECURITY ISSUE: Validity of SAML tokens is not checked. This is a fatal security issue. Please check the configuration of your system and contact our support team." description="Exceptions with this error code are thrown if a invalid saml token is passed on a login." messageID="3019" name="SAML_VALIDITY_CHECK_DISABLED" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="The passed SAML token does not match to the passed login name. (Login name: ''{0}}  SAML-Token User: ''{1}'')" description="Exceptions with this error code are thrown if user name and SAML token do not match." messageID="3020" name="SAML_LOGIN_TOKEN_MISMATCH" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Creating users in external identity provider is currently not supported." description="Exceptions with this error code are thrown if a new user should be created in a SAML based identitiy provider during registration." messageID="3021" name="CREATING_OAUTH_USERS_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Change of password in external identity provider is currently not supported. Please change your password through the mechanism of the external identity provider or contact your system administrator." description="Exceptions with this error code are thrown if a new user tries to change his SAML password." messageID="3022" name="OAUTH_PASSWORD_CHANGE_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Das Ändern von Passwörtern in einem externen Login Provider wird aktuell nicht unterstützt. Bitte ändern Sie Ihr Passwort über den Login Provider oder kontaktieren Sie Ihren Administrator." variant="" />
+        </Message>
+        <Message defaultText="Quering users in external identity provider is currently not supported." description="Exceptions with this error code are thrown if a new user should be created in a SAML based identitiy provider during registration." messageID="3023" name="OAUTH_USERS_QUERY_NOT_SUPPORTED" traceLevel="ERROR" type="ERROR" />
+        <Message defaultText="Request to OAuth provider with URL ''{0}'' failed. Reason: {1}" description="Exceptions with this error code are thrown if a new user tries to change his SAML password." messageID="3024" name="OAUTH_REQUEST_FAILED" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Der Zugriff auf den OAuth Provider mit der URL ''{0}'' ist fehlgeschlagen. Ursache: {1}" variant="" />
+        </Message>
+        <Message defaultText="Sending request to OAuth server ''{0}} \nHeader Fields: \n{1}" messageID="3025" name="OAUTH_PROVIDER_REQUEST" traceLevel="INFO" type="INFO" />
+        <Message defaultText="Received response from OAuth server: {0} \nHeader Fields: \n{1}" messageID="3026" name="OAUTH_PROVIDER_RESPONSE" traceLevel="INFO" type="INFO" />
+        <Message defaultText="Body: {0}" messageID="3027" name="OAUTH_BODY" traceLevel="DEBUG" type="INFO" />
+        <Message defaultText="The provided certificate data is not a valid X.509 certificate." description="Exceptions with this error code are thrown if a requested db property is not defined." messageID="3028" name="INVALID_PROVIDER_CERTIFICATE" traceLevel="ERROR" type="ERROR">
+            <LocalizedMessage country="" language="de" localizedText="Die übergegeben Daten sind kein gültiges X.509 Zertifikat." variant="" />
+        </Message>
+    </MessageFolder>
+</Root>
